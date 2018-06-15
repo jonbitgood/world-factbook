@@ -1,0 +1,71 @@
+{{#geography}}
+	<section class="factbook-geography">
+		<h1>Geography</h1>
+		{{#latitude}}
+			{{#longitude}}
+				<div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+					{{#location_description}}
+						<div>
+							<b>Location Description</b>
+							<span itemprop="description">{{location_description}}</span>
+						</div>
+					{{/location_description}}
+					<span itemprop="latitude">{{latitude}}</span>
+					<span itemprop="longitude">{{longitude}}</span>
+				</div>
+			{{/longitude}}
+		{{/latitude}}
+		{{#mapReferences}}
+			<div itemprop="containedInPlace" itemscope itemtype="http://schema.org/Place">
+				<b>Map References</b>
+				<span itemprop="name">{{mapReferences}}</span>
+			</div>
+		{{/mapReferences}}
+		<div class="area">
+			{{#area_sqkm_total}}
+				<div>
+					<b>Area sqkm Total</b>
+					<p>{{area_sqkm_total}}</p>
+				</div>
+			{{/area_sqkm_total}}
+			{{#area_sqkm_land}}
+				<div>
+					<b>Area sqkm Land</b>
+					<p>{{area_sqkm_land}}</p>
+				</div>
+			{{/area_sqkm_land}}
+			{{#area_sqkm_water}}
+				<div>
+					<b>Area sqkm Water</b>
+					<p>{{area_sqkm_water}}</p>
+				</div>
+			{{/area_sqkm_water}}
+			{{#area_km_coastline}}<div><b>Area km Coastline</b><p>{{area_km_coastline}}</p></div>{{/area_km_coastline}}
+			{{#area_note}}<div><b>Area Note</b><p>{{area_note}}</p></div>{{/area_note}}
+		</div>
+		{{#climate}}
+			<div>
+				<b>Climate</b>
+				<p>{{climate}}</p>
+			</div>
+		{{/climate}}
+		{{#terrain}}
+			<div>
+				<b>Terrain</b>
+				<p>{{terrain}}</p>
+			</div>
+		{{/terrain}}
+		{{#hazards}}
+			<div>
+				<b>Hazards</b>
+				<p>{{hazards}}</p>
+			</div>
+		{{/hazards}}
+		{{#notes}}
+			<div>
+				<b>Notes</b>
+				<p>{{notes}}</p>
+			</div>
+		{{/notes}}
+	</section>
+{{/geography}}

@@ -1,11 +1,23 @@
+<div itemscope itemtype="http://schema.org/Country" class="row">
+
+	<nav role="tablist">
+		<a role="tab" aria-selected="true" href="#wfb-communications">communications</a>
+		<a role="tab" href="#wfb-economy">economy</a>
+		<a role="tab" href="#wfb-energy">energy</a>
+		<a role="tab" href="#wfb-government">government</a>
+		<a role="tab" href="#wfb-issues">issues</a>
+		<a role="tab" href="#wfb-people">people</a>
+		<a role="tab" href="#wfb-transportation">transportation</a>
+	</nav>
+
 {{#communications}}
-<div class="row">
+<section id="wfb-communications" role="tabpanel" aria-hidden="false" aria-selected="true">
 	<h1 class="text-centered">Communications</h1>
 	<div class="medium-8 columns">
-		{{#phone_system_domestic}}<div class="description">{{phone_system_domestic}}</div><p>count') }}</p>{{/phone_system_domestic}}
-		{{#phone_system_international}}<div class="description">{{phone_system_international}}</div><p>count') }}</p>{{/phone_system_international}}
-		{{#phone_system_general_assessment}}<div class="description">{{phone_system_general_assessment}}</div><p>count') }}</p>{{/phone_system_general_assessment}}
-		{{#broadcast_media}}<div class="description">{{broadcast_media}}</div><p>count') }}</p>{{/broadcast_media}}
+		{{#phone_system_domestic}}<div class="description">{{phone_system_domestic}}</div><p></p>{{/phone_system_domestic}}
+		{{#phone_system_international}}<div class="description">{{phone_system_international}}</div><p></p>{{/phone_system_international}}
+		{{#phone_system_general_assessment}}<div class="description">{{phone_system_general_assessment}}</div><p></p>{{/phone_system_general_assessment}}
+		{{#broadcast_media}}<div class="description">{{broadcast_media}}</div><p></p>{{/broadcast_media}}
 	</div>
 	<div class="medium-4 columns">
 		{{#fixed_phones_total}}<div class="medium-6 columns"><div class="stat">{{ fixed_phones_total }}</div><p>country.fixed_phones</p></div>{{/fixed_phones_total}}
@@ -16,11 +28,11 @@
 		{{#fixed_phones_subs_per_100}}<div class="medium-12 columns"><div class="stat">{{ fixed_phones_subs_per_100 }}</div><p>country.fixed_phone_subs</p></div>{{/fixed_phones_subs_per_100}}
 		{{#mobile_phones_subs_per_100}}<div class="medium-12 columns"><div class="stat">{{ mobile_phones_subs_per_100 }}</div><p>country.mobile_phone_subs</p></div>{{/mobile_phones_subs_per_100}}
 	</div>
-</div>
+</section>
 {{/communications}}
 
 {{#economy}}
-<div class="row">
+<section id="wfb-economy" role="tabpanel" aria-hidden="true">
 	{{#overview}}<div class="medium-3 columns"><div class="stat">economic_overview</div><p>{{ overview }}</p></div>{{/overview}}
 	{{#gdp_power_parity}}<div class="medium-3 columns"><div class="stat">gdp_power_parity</div><p>{{ gdp_power_parity }}</p></div>{{/gdp_power_parity}}
 	{{#gdp_real_growth}}<div class="medium-3 columns"><div class="stat">gdp_real_growth</div><p>{{ gdp_real_growth }}</p></div>{{/gdp_real_growth}}
@@ -65,10 +77,11 @@
 	{{#imports}}<div class="medium-3 columns"><div class="stat">imports</div><p>{{ imports }}</p></div>{{/imports}}
 	{{#imports_commodities}}<div class="medium-3 columns"><div class="stat">imports_commodities</div><p>{{ imports_commodities }}</p></div>{{/imports_commodities}}
 	{{#imports_partners}}<div class="medium-3 columns"><div class="stat">imports_partners</div><p>{{ imports_partners }}</p></div>{{/imports_partners}}
-</div>
+</section>
 {{/economy}}
 
 {{#energy}}
+<section id="wfb-energy" role="tabpanel" aria-hidden="true">
 {{#electricity_production}}<div class="medium-3 columns"><span class="stat">electricity_production</span><p>{{ electricity_production }}</p></div>{{/electricity_production}}
 {{#electricity_consumption}}<div class="medium-3 columns"><span class="stat">electricity_consumption</span><p>{{ electricity_consumption }}</p></div>{{/electricity_consumption}}
 {{#electricity_exports}}<div class="medium-3 columns"><span class="stat">electricity_exports</span><p>{{ electricity_exports }}</p></div>{{/electricity_exports}}
@@ -92,30 +105,13 @@
 {{#natural_gas_imports}}<div class="medium-3 columns"><span class="stat">natural_gas_imports</span><p>{{ natural_gas_imports }}</p></div>{{/natural_gas_imports}}
 {{#natural_gas_reserves}}<div class="medium-3 columns"><span class="stat">natural_gas_reserves</span><p>{{ natural_gas_reserves }}</p></div>{{/natural_gas_reserves}}
 {{#co2_output}}<div class="medium-3 columns"><span class="stat">co2_output</span><p>{{ co2_output }}</p></div>{{/co2_output}}
+</section>
 {{/energy}}
 
-{{#geography}}
-	<div class="row">
-		<h1>GEOGRAPHY SECTION</h1>
-		{{#country_id}}<div class="medium-3 columns"><b>country id</b><p>{{country_id}}</p></div>{{/country_id}}
-		{{#location_description}}<div class="medium-3 columns"><b>=Location Description</b><p>{{location_description}}</p></div>{{/location_description}}
-		{{#latitude}}<div class="medium-3 columns"><b>Latitude</b><p>{{latitude}}</p></div>{{/latitude}}
-		{{#longitude}}<div class="medium-3 columns"><b>Longitude</b><p>{{longitude}}</p></div>{{/longitude}}
-		{{#mapReferences}}<div class="medium-3 columns"><b>Map References</b><p>{{mapReferences}}</p></div>{{/mapReferences}}
-		{{#area_sqkm_total}}<div class="medium-3 columns"><b>Area sqkm Total</b><p>{{area_sqkm_total}}</p></div>{{/area_sqkm_total}}
-		{{#area_sqkm_land}}<div class="medium-3 columns"><b>Area sqkm Land</b><p>{{area_sqkm_land}}</p></div>{{/area_sqkm_land}}
-		{{#area_sqkm_water}}<div class="medium-3 columns"><b>Area sqkm Water</b><p>{{area_sqkm_water}}</p></div>{{/area_sqkm_water}}
-		{{#area_km_coastline}}<div class="medium-3 columns"><b>Area km Coastline</b><p>{{area_km_coastline}}</p></div>{{/area_km_coastline}}
-		{{#area_note}}<div class="medium-3 columns"><b>Area Note</b><p>{{area_note}}</p></div>{{/area_note}}
-		{{#climate}}<div class="medium-3 columns"><b>Climate</b><p>{{climate}}</p></div>{{/climate}}
-		{{#terrain}}<div class="medium-3 columns"><b>Terrain</b><p>{{terrain}}</p></div>{{/terrain}}
-		{{#hazards}}<div class="medium-3 columns"><b>Hazards</b><p>{{hazards}}</p></div>{{/hazards}}
-		{{#notes}}<div class="medium-3 columns"><b>Notes</b><p>{{notes}}</p></div>{{/notes}}
-	</div>
-{{/geography}}
+{{>geography}}
 
 {{#government}}
-<div class="row">
+<section id="wfb-government" role="tabpanel" aria-hidden="true">
 	{{#name}}<div class="medium-8 columns centered"><span class="stat">name</span><p>{{ name }}</p></div>{{/name}}
 	<div class="row">
 		{{#administrative_divisions}}<div class="medium-8 columns"><span class="description">administrative_divisions</span><p>{{ administrative_divisions }}</p></div>{{/administrative_divisions}}
@@ -155,16 +151,19 @@
 		{{#national_symbols}}<div class="medium-3 columns"><span class="description">national_symbols</span><p>{{ national_symbols }}</p></div>{{/national_symbols}}
 		{{#national_anthem}}<div class="medium-3 columns"><span class="description">national_anthem</span><p>{{ national_anthem }}</p></div>{{/national_anthem}}
 	</div>
-</div>
+</section>
 {{/government}}
 
 {{#issues}}
+<section id="wfb-issues" role="tabpanel" aria-hidden="true">
 	{{#international_disputes}}<div class="medium-4 columns"><div class="description">{{ international_disputes }}</div><p>{{ international_disputes }}</p></div>{{/international_disputes}}
 	{{#illicit_drugs}}<div class="medium-4 columns"><div class="description">{{ illicit_drugs }}</div><p>{{ illicit_drugs }}</p></div>{{/illicit_drugs}}
 	{{#refugees}}<div class="medium-4 columns"><div class="description">{{ refugees }}</div><p>{{ refugees }}</p></div>{{/refugees}}
+</section>
 {{/issues}}
 
 {{#people}}
+<section id="wfb-people" role="tabpanel" aria-hidden="true">
 {{#population}}<div class="medium-3 columns"><div class="stat">{{ population }}</div><p>Population</p></div>{{/population}}
 {{#population_date}}<div class="medium-3 columns"><div class="stat">{{ population_date }}</div><p>Population</p></div>{{/population_date}}
 {{#nationality_noun}}<div class="medium-3 columns"><div class="stat">{{ nationality_noun }}</div><p>Nationality</p></div>{{/nationality_noun}}
@@ -228,10 +227,11 @@
 {{#unemployment_youth_total}}<div class="medium-3 columns"><div class="stat">{{ unemployment_youth_total }}</div><p>child_labor_percentage</p></div>{{/unemployment_youth_total}}
 {{#unemployment_youth_male}}<div class="medium-3 columns"><div class="stat">{{ unemployment_youth_male }}</div><p>unemployment_youth_total</p></div>{{/unemployment_youth_male}}
 {{#unemployment_youth_female}}<div class="medium-3 columns"><div class="stat">{{ unemployment_youth_female }}</div><p>unemployment_youth_male</p></div>{{/unemployment_youth_female}}
+</section>
 {{/people}}
 
 {{#transportation}}
-	<div class="row">
+<section id="wfb-transportation" role="tabpanel" aria-hidden="true">
 		{{#air_carriers}}<div class="medium-6 columns"><div class="stat">{{ air_carriers }}</div><p>air_carriers</p></div>{{/air_carriers}}
 		{{#aircraft}}<div class="medium-6 columns"><div class="stat">{{ aircraft }}</div><p>aircraft</p></div>{{/aircraft}}
 		{{#aircraft_passengers}}<div class="medium-6 columns"><div class="stat">{{ aircraft_passengers }}</div><p>aircraft_passengers</p></div>{{/aircraft_passengers}}
@@ -243,5 +243,7 @@
 		{{#major_seaports}}<div class="medium-6 columns"><div class="stat">{{ major_seaports }}</div><p>major_seaports</p></div>{{/major_seaports}}
 		{{#oil_terminals}}<div class="medium-6 columns"><div class="stat">{{ oil_terminals }}</div><p>oil_terminals</p></div>{{/oil_terminals}}
 		{{#cruise_ports}}<div class="medium-6 columns"><div class="stat">{{ cruise_ports }}</div><p>cruise_ports</p></div>{{/cruise_ports}}
-	</div>
+</section>
 {{/transportation}}
+
+</div>

@@ -1,7 +1,7 @@
 /*!
  *  WorldFactbook.js for World Factbook in JavaScript.
  *
- *  @version 0.1.0
+ *  @version 1.1.0
  *  @license MIT https://github.com/confirmed/WorldFactbook.js/blob/master/LICENSE
  *  @site    https://github.com/confirmed/WorldFactbook.js
  *  @author  Jonathan Bitgood <jon@dbs.org>
@@ -24,48 +24,20 @@
 	'use strict';
 
 	var fs = require('fs');
-	var hoganized = require('./templates');
-
 	var defaults = {
-		key: false
+		key: false,
+		theme: 'default'
 	};
 
 	// Constructor //
 
 	var WorldFactbook = function(options) {
 		options = options || {};
+		console.dir(options);
 		this.key = options.key || defaults.key;
+		this.theme = options.theme || defaults.theme;
 	};
 
-	/**
-   * Get the current key.
-   *
-   * @return {string} The current key.
-   */
-	WorldFactbook.prototype.getKey = function() {
-		return this.key || defaults.key;
-	};
-
-	/**
-   * Set the current key.
-   *
-   * @param key {string} The key to set.
-   *
-   * @return void
-   */
-	WorldFactbook.prototype.setKey = function(key) {
-		this.key = key;
-	};
-
-	/**
-   * Get a translation message.
-   *
-   * @param key {string} The key of the message.
-   * @param section {string} The replacements to be done in the message.
-   * @param key {string} The key to use, if not passed use the default key.
-   *
-   * @return {string} The translation message, if not found the given key.
-   */
 	WorldFactbook.prototype.get = function(key, country) {
 		if (!this.key) {
 			return fetch('/data/factbook/' + country + '.json', {method: 'GET', mode: 'cors', cache: 'default'}
@@ -77,10 +49,11 @@
 		}
 	};
 
-	WorldFactbook.prototype.renderHTML = function(key, country, section, theme) {
+	WorldFactbook.prototype.renderHTML = function(key, country, section) {
+		let hoganized = require('./' + this.theme + '-templates');
 		return this.get(key, country).then(function(currentCountry) {
-			if (section) return hoganized.templates()[theme + section].render(currentCountry[section]);
-			var entireFactbook = hoganized.templates()['factbook'].render(currentCountry);
+			if (section) return hoganized.templates(section).render(currentCountry[section]);
+			var entireFactbook = hoganized.templates('factbook').render(currentCountry);
 			return entireFactbook;
 		});
 	};

@@ -1,0 +1,320 @@
+<div id="profile">
+	<div class="tab communications">
+		<input id="tab-four" type="radio" name="tabs2">
+		<label for="tab-four">communications</label>
+		<div class="tab-content">
+			<div class="row">
+				<div class="medium-8 columns">
+					{{#fixed_phones_total}}
+						<div class="small-12 medium-6 columns stat">
+							Fixed Phones
+							<em>{{ fixed_phones_total }}</em>
+						</div>
+					{{/fixed_phones_total}}
+					{{#fixed_phones_subs_per_100}}
+						<div class="small-12 medium-6 columns stat">
+							Fixed-Phones Subscriptions Per 100 people
+							<em>{{ fixed_phones_subs_per_100 }}</em>
+						</div>
+					{{/fixed_phones_subs_per_100}}
+					{{#mobile_phones_total}}
+						<div class="small-12 medium-6 columns stat">
+							Mobile Phones
+							<em>{{ mobile_phones_total }}</em>
+						</div>
+					{{/mobile_phones_total}}
+					{{#mobile_phones_subs_per_100}}
+						<div class="small-12 medium-6 columns stat">Mobile Subscriptions Per 100 people
+							<em>{{ mobile_phones_subs_per_100 }}</em>
+						</div>
+					{{/mobile_phones_subs_per_100}}
+					{{#internet_country_code}}
+						<div class="small-12 medium-6 columns stat">Internet Country Code
+							<em>.{{ internet_country_code }}</em>
+						</div>
+					{{/internet_country_code}}
+					{{#internet_total_users}}
+						<div class="small-12 medium-6 columns stat">Internet Users
+							<em>{{ internet_total_users }}</em>
+						</div>
+					{{/internet_total_users}}
+					{{#internet_population_percent}}
+						<div class="small-12 medium-6 columns stat">Population with Internet Access
+							<em>{{ internet_population_percent }}%</em>
+						</div>
+					{{/internet_population_percent}}
+				</div>
+				<div class="medium-4 columns">
+					{{#phone_system_general_assessment}}
+						General Assessment<br><br>
+						{{ phone_system_general_assessment }}
+					{{/phone_system_general_assessment}}
+					{{#phone_system_international}}
+						Phone System International<br><br>
+						{{ phone_system_international }}
+					{{/phone_system_international}}
+					{{#phone_system_domestic}}
+						Phone System Domestic<br><br>
+						{{ phone_system_domestic }}
+					{{/phone_system_domestic}}
+					{{#broadcast_media}}
+						Broadcast Media<br><br>
+						{{ broadcast_media }}
+					{{/broadcast_media}}
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="tab">
+	<input id="tab-government" type="radio" name="tabs2">
+	<label for="tab-government">government</label>
+
+	<div class="tab-content">
+		{{#name}}<div class="row"><span class="stat">name</span><em>{{name}}</em>{{/name}}
+		{{#conventional_long_form}}<span class="stat">Long Form Name<em>{{ conventional_long_form }}</em></span>{{/conventional_long_form}}
+		{{#conventional_short_form}}<span class="stat">conventional_short_form<em>{{ conventional_short_form }}</em></span>{{/conventional_short_form}}
+		{{#name_etymology}}<h3>Name Etymology</h3><p>{{ name_etymology }}</p>{{/name_etymology}}
+	</div>
+
+	{{#dependency_status}}<span class="stat">dependency_status<em>{{ dependency_status }}</em></span>{{/dependency_status}}
+	{{#government_type}}<span class="stat">government_type<em>{{ government_type }}</em></span>{{/government_type}}
+	{{#capital}}<span class="stat">capital<em>{{ capital }}</em></span>{{/capital}}
+	{{#capital_coordinates}}<span class="stat">capital_coordinates<em>{{ capital_coordinates }}</em></span>{{/capital_coordinates}}
+	{{#capital_time_zone}}<span class="stat">capital_time_zone<em>{{ capital_time_zone }}</em></span>{{/capital_time_zone}}
+	{{#administrative_divisions}}<span class="stat">administrative_divisions<em>{{ administrative_divisions }}</em></span>{{/administrative_divisions}}
+	{{#administrative_divisions_note}}<span class="stat">administrative_divisions_note<em>{{ administrative_divisions_note }}</em></span>{{/administrative_divisions_note}}
+	{{#independence}}<span class="stat">independence<em>{{ independence }}</em></span>{{/independence}}
+	{{#national_holiday}}<span class="stat">national_holiday<em>{{ national_holiday }}</em></span>{{/national_holiday}}
+	{{#constitution}}<span class="stat">constitution<em>{{ constitution }}</em></span>{{/constitution}}
+	{{#legal_system}}<span class="stat">legal_system<em>{{ legal_system }}</em></span>{{/legal_system}}
+	{{#citizenship}}<span class="stat">citizenship<em>{{ citizenship }}</em></span>{{/citizenship}}
+	{{#suffrage}}<span class="stat">suffrage<em>{{ suffrage }}</em></span>{{/suffrage}}
+	{{#executive_chief_of_state}}<span class="stat">executive_chief_of_state<em>{{ executive_chief_of_state }}</em></span>{{/executive_chief_of_state}}
+	{{#executive_head_of_government}}<span class="stat">executive_head_of_government<em>{{ executive_head_of_government }}</em></span>{{/executive_head_of_government}}
+	{{#executive_cabinet}}<span class="stat">executive_cabinet<em>{{ executive_cabinet }}</em></span>{{/executive_cabinet}}
+	{{#executive_elections}}<span class="stat">executive_elections<em>{{ executive_elections }}</em></span>{{/executive_elections}}
+	{{#executive_election_results}}<span class="stat">executive_election_results<em>{{ executive_election_results }}</em></span>{{/executive_election_results}}
+	{{#legislative_description}}<span class="stat">legislative_description<em>{{ legislative_description }}</em></span>{{/legislative_description}}
+	{{#legislative_elections}}<span class="stat">legislative_elections<em>{{ legislative_elections }}</em></span>{{/legislative_elections}}
+	{{#legislative_election_results}}<span class="stat">legislative_election_results<em>{{ legislative_election_results }}</em></span>{{/legislative_election_results}}
+	{{#legislative_highest_courts}}<span class="stat">legislative_highest_courts<em>{{ legislative_highest_courts }}</em></span>{{/legislative_highest_courts}}
+	{{#legislative_judge_selection}}<span class="stat">legislative_judge_selection<em>{{ legislative_judge_selection }}</em></span>{{/legislative_judge_selection}}
+	{{#legislative_subordinate_courts}}<span class="stat">legislative_subordinate_courts<em>{{ legislative_subordinate_courts }}</em></span>{{/legislative_subordinate_courts}}
+	{{#political_parties}}<span class="stat">political_parties<em>{{ political_parties }}</em></span>{{/political_parties}}
+	{{#political_pressure}}<span class="stat">political_pressure<em>{{ political_pressure }}</em></span>{{/political_pressure}}
+	{{#international_organization_participation}}<span class="stat">international_organization_participation<em>{{ international_organization_participation }}</em></span>{{/international_organization_participation}}
+	{{#diplomatic_representation_in_usa}}<span class="stat">diplomatic_representation_in_usa<em>{{ diplomatic_representation_in_usa }}</em></span>{{/diplomatic_representation_in_usa}}
+	{{#diplomatic_representation_from_usa}}<span class="stat">diplomatic_representation_from_usa<em>{{ diplomatic_representation_from_usa }}</em></span>{{/diplomatic_representation_from_usa}}
+	{{#flag_description}}<span class="stat">flag_description<em>{{ flag_description }}</em></span>{{/flag_description}}
+	{{#national_symbols}}<span class="stat">national_symbols<em>{{ national_symbols }}</em></span>{{/national_symbols}}
+	{{#national_anthem}}<span class="stat">national_anthem<em>{{ national_anthem }}</em></span>{{/national_anthem}}
+</div>
+</div>
+{{#economy}}
+		<div class="tab">
+			<input id="tab-economy" type="radio" name="tabs2">
+			<label for="tab-economy">economy</label>
+			<div class="tab-content">
+				<span>overview <em>{{ overview }}</em></span>
+				<span>gdp_power_parity <em>{{ gdp_power_parity }}</em></span>
+				<span>gdp_real_growth <em>{{ gdp_real_growth }}</em></span>
+				<span>gdp_per_capita <em>{{ gdp_per_capita }}</em></span>
+				<span>gdp_household_consumption <em>{{ gdp_household_consumption }}</em></span>
+				<span>gdp_consumption <em>{{ gdp_consumption }}</em></span>
+				<span>gdp_investment_in_fixed_capital <em>{{ gdp_investment_in_fixed_capital }}</em></span>
+				<span>gdp_investment_in_inventories <em>{{ gdp_investment_in_inventories }}</em></span>
+				<span>gdp_exports <em>{{ gdp_exports }}</em></span>
+				<span>gdp_imports <em>{{ gdp_imports }}</em></span>
+				<span>gdp_sector_agriculture <em>{{ gdp_sector_agriculture }}</em></span>
+				<span>gdp_sector_industry <em>{{ gdp_sector_industry }}</em></span>
+				<span>gdp_sector_services <em>{{ gdp_sector_services }}</em></span>
+				<span>agriculture_products <em>{{ agriculture_products }}</em></span>
+				<span>industries <em>{{ industries }}</em></span>
+				<span>industrial_growth_rate <em>{{ industrial_growth_rate }}</em></span>
+				<span>labor_force <em>{{ labor_force }}</em></span>
+				<span>labor_force_notes <em>{{ labor_force_notes }}</em></span>
+				<span>labor_force_services <em>{{ labor_force_services }}</em></span>
+				<span>labor_force_industry <em>{{ labor_force_industry }}</em></span>
+				<span>labor_force_agriculture <em>{{ labor_force_agriculture }}</em></span>
+				<span>labor_force_occupation_notes <em>{{ labor_force_occupation_notes }}</em></span>
+				<span>unemployment_rate <em>{{ unemployment_rate }}</em></span>
+				<span>population_below_poverty <em>{{ population_below_poverty }}</em></span>
+				<span>household_income_lowest_10 <em>{{ household_income_lowest_10 }}</em></span>
+				<span>household_income_highest_10 <em>{{ household_income_highest_10 }}</em></span>
+				<span>budget_revenues <em>{{ budget_revenues }}</em></span>
+				<span>taxes_revenues <em>{{ taxes_revenues }}</em></span>
+				<span>budget_net <em>{{ budget_net }}</em></span>
+				<span>public_debt <em>{{ public_debt }}</em></span>
+				<span>external_debt <em>{{ external_debt }}</em></span>
+				<span>fiscal_year <em>{{ fiscal_year }}</em></span>
+				<span>inflation_rate <em>{{ inflation_rate }}</em></span>
+				<span>central_bank_discount_rate <em>{{ central_bank_discount_rate }}</em></span>
+				<span>commercial_bank_prime_lending_rate <em>{{ commercial_bank_prime_lending_rate }}</em></span>
+				<span>stock_money_narrow <em>{{ stock_money_narrow }}</em></span>
+				<span>stock_money_broad <em>{{ stock_money_broad }}</em></span>
+				<span>stock_domestic_credit <em>{{ stock_domestic_credit }}</em></span>
+				<span>exports <em>{{ exports }}</em></span>
+				<span>exports_commodities <em>{{ exports_commodities }}</em></span>
+				<span>exports_partners <em>{{ exports_partners }}</em></span>
+				<span>imports <em>{{ imports }}</em></span>
+				<span>imports_commodities <em>{{ imports_commodities }}</em></span>
+				<span>imports_partners <em>{{ imports_partners }}</em></span>
+			</div>
+		</div>
+{{/economy}}
+{{#issues}}
+		<div class="tab">
+			<input id="tab-issues" type="radio" name="tabs2">
+			<label for="tab-issues">issues</label>
+			<div class="tab-content">
+				{{ international_disputes }}
+				{{ illicit_drugs }}
+				{{ refugees }}
+			</div>
+		</div>
+{{/issues}}
+{{#energy}}
+		<div class="tab">
+			<input id="tab-energy" type="radio" name="tabs2">
+			<label for="tab-energy">energy</label>
+			<div class="tab-content">
+				<span>{{ electricity_production }}</span>
+				<span>{{ electricity_consumption }}</span>
+				<span>{{ electricity_exports }}</span>
+				<span>{{ electricity_imports }}</span>
+				<span>{{ electricity_generating_capacity }}</span>
+				<span>{{ electricity_fossil_fuels }}</span>
+				<span>{{ electricity_nuclear }}</span>
+				<span>{{ electricity_hydroelectric }}</span>
+				<span>{{ electricity_renewable }}</span>
+				<span>{{ crude_oil_production }}</span>
+				<span>{{ crude_oil_exports }}</span>
+				<span>{{ crude_oil_imports }}</span>
+				<span>{{ crude_oil_reserves }}</span>
+				<span>{{ petrol_production }}</span>
+				<span>{{ petrol_consumption }}</span>
+				<span>{{ petrol_exports }}</span>
+				<span>{{ petrol_imports }}</span>
+				<span>{{ natural_gas_production }}</span>
+				<span>{{ natural_gas_consumption }}</span>
+				<span>{{ natural_gas_exports }}</span>
+				<span>{{ natural_gas_imports }}</span>
+				<span>{{ natural_gas_reserves }}</span>
+				<span>{{ co2_output }}</span>
+			</div>
+		</div>
+{{/energy}}
+{{#geography}}
+		<div class="tab">
+			<input id="tab-geography" type="radio" name="tabs2">
+			<label for="tab-geography">geography</label>
+			<div class="tab-content">
+				<span>location_description {{ location_description }}</span>
+				<span>coordinates {{ coordinates }}</span>
+				<span>mapReferences {{ mapReferences }}</span>
+				<span>Area sqkm total {{ area_sqkm_total }}</span>
+				<span>Area sqkm land {{ area_sqkm_land }}</span>
+				<span>Area sqkm water {{ area_sqkm_water }}</span>
+				<span>Coastline {{ area_km_coastline }}</span>
+				<span>Area note {{ area_note }}</span>
+				<span>Climate {{ climate }}</span>
+				<span>Terrain {{ terrain }}</span>
+				<span>Hazards {{ hazards }}</span>
+				<span>Notes {{ notes }}</span>
+			</div>
+		</div>
+{{/geography}}
+{{#transporation}}
+		<div class="tab">
+			<input id="tab-transportation" type="radio" name="tabs2">
+			<label for="tab-transportation">transportation</label>
+			<div class="tab-content">
+				{{ air_carriers }}
+				{{ aircraft }}
+				{{ aircraft_passengers }}
+				{{ aircraft_freight }}
+				{{ aircraft_code_prefix }}
+				{{ airports }}
+				{{ airports_paved }}
+				{{ airports_info_date }}
+				{{ major_seaports }}
+				{{ oil_terminals }}
+				{{ cruise_ports }}
+			</div>
+		</div>
+{{/transporation}}
+
+{{#people}}
+	<div class="tab">
+		<input id="tab-people" type="radio" name="tabs2">
+		<label for="tab-people">people</label>
+	<div class="tab-content">
+	{{#population}} <span>Population <b>{{ population }}</b></span> {{/population}}
+		{{#population_date}} <span>Population Date <b>{{ population_date }}</b></span> {{/population_date}}
+		{{#nationality_noun}} <span>Nationality Noun <b>{{ nationality_noun }}</b></span> {{/nationality_noun}}
+		{{#nationality_adjective}} <span>Nationality Adjective <b>{{ nationality_adjective }}</b></span> {{/nationality_adjective}}
+		{{#age_structure_14}} <span>age_structure_14 <b>{{ age_structure_14 }}</b></span> {{/age_structure_14}}
+		{{#age_structure_24}} <span>age_structure_24 <b>{{ age_structure_24 }}</b></span> {{/age_structure_24}}
+		{{#age_structure_54}} <span>age_structure_54 <b>{{ age_structure_54 }}</b></span> {{/age_structure_54}}
+		{{#age_structure_64}} <span>age_structure_64 <b>{{ age_structure_64 }}</b></span> {{/age_structure_64}}
+		{{#age_structure_65}} <span>age_structure_65 <b>{{ age_structure_65 }}</b></span> {{/age_structure_65}}
+		{{#dependency_total}} <span>dependency_total <b>{{ dependency_total }}</b></span> {{/dependency_total}}
+		{{#dependency_youth}} <span>dependency_youth <b>{{ dependency_youth }}</b></span> {{/dependency_youth}}
+		{{#dependency_elder}} <span>dependency_elder <b>{{ dependency_elder }}</b></span> {{/dependency_elder}}
+		{{#dependency_potential}} <span>dependency_potential <b>{{ dependency_potential }}</b></span> {{/dependency_potential}}
+		{{#median_age_total}} <span>median_age_total <b>{{ median_age_total }}</b></span> {{/median_age_total}}
+		{{#median_age_male}} <span>median_age_male <b>{{ median_age_male }}</b></span> {{/median_age_male}}
+		{{#median_age_female}} <span>median_age_female <b>{{ median_age_female }}</b></span> {{/median_age_female}}
+		{{#population_growth_rate_percentage}} <span>population_growth_rate_percentage <b>{{ population_growth_rate_percentage }}</b></span> {{/population_growth_rate_percentage}}
+		{{#birth_rate_per_1k}} <span>birth_rate_per_1k <b>{{ birth_rate_per_1k }}</b></span> {{/birth_rate_per_1k}}
+		{{#death_rate_per_1k}} <span>death_rate_per_1k <b>{{ death_rate_per_1k }}</b></span> {{/death_rate_per_1k}}
+		{{#net_migration_per_1k}} <span>net_migration_per_1k <b>{{ net_migration_per_1k }}</b></span> {{/net_migration_per_1k}}
+		{{#population_distribution}} <div>population_distribution <p>{{ population_distribution }}</p></div> {{/population_distribution}}
+		{{#sex_ratio_birth}} <span>sex_ratio_birth <b>{{ sex_ratio_birth }}</b></span> {{/sex_ratio_birth}}
+		{{#sex_ratio_14}} <span>sex_ratio_14 <b>{{ sex_ratio_14 }}</b></span> {{/sex_ratio_14}}
+		{{#sex_ratio_24}} <span>sex_ratio_24 <b>{{ sex_ratio_24 }}</b></span> {{/sex_ratio_24}}
+		{{#sex_ratio_54}} <span>sex_ratio_54 <b>{{ sex_ratio_54 }}</b></span> {{/sex_ratio_54}}
+		{{#sex_ratio_64}} <span>sex_ratio_64 <b>{{ sex_ratio_64 }}</b></span> {{/sex_ratio_64}}
+		{{#sex_ratio_65}} <span>sex_ratio_65 <b>{{ sex_ratio_65 }}</b></span> {{/sex_ratio_65}}
+		{{#sex_ratio_total}} <span>sex_ratio_total <b>{{ sex_ratio_total }}</b></span> {{/sex_ratio_total}}
+		{{#mother_age_first_birth}} <span>mother_age_first_birth <b>{{ mother_age_first_birth }}</b></span> {{/mother_age_first_birth}}
+		{{#maternal_mortality_rate}} <span>maternal_mortality_rate <b>{{ maternal_mortality_rate }}</b></span> {{/maternal_mortality_rate}}
+		{{#infant_mortality_per_1k_total}} <span>infant_mortality_per_1k_total <b>{{ infant_mortality_per_1k_total }}</b></span> {{/infant_mortality_per_1k_total}}
+		{{#infant_mortality_per_1k_male}} <span>infant_mortality_per_1k_male <b>{{ infant_mortality_per_1k_male }}</b></span> {{/infant_mortality_per_1k_male}}
+		{{#infant_mortality_per_1k_female}} <span>infant_mortality_per_1k_female <b>{{ infant_mortality_per_1k_female }}</b></span> {{/infant_mortality_per_1k_female}}
+		{{#life_expectancy_at_birth_total}} <span>life_expectancy_at_birth_total <b>{{ life_expectancy_at_birth_total }}</b></span> {{/life_expectancy_at_birth_total}}
+		{{#life_expectancy_at_birth_male}} <span>life_expectancy_at_birth_male <b>{{ life_expectancy_at_birth_male }}</b></span> {{/life_expectancy_at_birth_male}}
+		{{#life_expectancy_at_birth_female}} <span>life_expectancy_at_birth_female <b>{{ life_expectancy_at_birth_female }}</b></span> {{/life_expectancy_at_birth_female}}
+		{{#total_fertility_rate}} <span>total_fertility_rate <b>{{ total_fertility_rate }}</b></span> {{/total_fertility_rate}}
+		{{#contraceptive_prevalence}} <span>contraceptive_prevalence <b>{{ contraceptive_prevalence }}</b></span> {{/contraceptive_prevalence}}
+		{{#health_expenditures}} <span>health_expenditures <b>{{ health_expenditures }}</b></span> {{/health_expenditures}}
+		{{#physicians}} <span>physicians <b>{{ physicians }}</b></span> {{/physicians}}
+		{{#hospital_beds}} <span>hospital_beds <b>{{ hospital_beds }}</b></span> {{/hospital_beds}}
+		{{#drinking_water_source_urban_improved}} <span>drinking_water_source_urban_improved <b>{{ drinking_water_source_urban_improved }}</b></span> {{/drinking_water_source_urban_improved}}
+		{{#drinking_water_source_rural_improved}} <span>drinking_water_source_rural_improved <b>{{ drinking_water_source_rural_improved }}</b></span> {{/drinking_water_source_rural_improved}}
+		{{#sanitation_facility_access_urban_improved}} <span>sanitation_facility_access_urban_improved <b>{{ sanitation_facility_access_urban_improved }}</b></span> {{/sanitation_facility_access_urban_improved}}
+		{{#sanitation_facility_access_rural_improved}} <span>sanitation_facility_access_rural_improved <b>{{ sanitation_facility_access_rural_improved }}</b></span> {{/sanitation_facility_access_rural_improved}}
+		{{#hiv_infection_rate}} <span>hiv_infection_rate <b>{{ hiv_infection_rate }}</b></span> {{/hiv_infection_rate}}
+		{{#hiv_infected}} <span>hiv_infected <b>{{ hiv_infected }}</b></span> {{/hiv_infected}}
+		{{#hiv_deaths}} <span>hiv_deaths <b>{{ hiv_deaths }}</b></span> {{/hiv_deaths}}
+		{{#obesity_rate}} <span>obesity_rate <b>{{ obesity_rate }}</b></span> {{/obesity_rate}}
+		{{#underweight_children}} <span>underweight_children <b>{{ underweight_children }}</b></span> {{/underweight_children}}
+		{{#education_expenditures}} <span>education_expenditures <b>{{ education_expenditures }}</b></span> {{/education_expenditures}}
+		{{#literacy_definition}} <span>literacy_definition <b>{{ literacy_definition }}</b></span> {{/literacy_definition}}
+		{{#literacy_total}} <span>literacy_total <b>{{ literacy_total }}</b></span> {{/literacy_total}}
+		{{#literacy_male}} <span>literacy_male <b>{{ literacy_male }}</b></span> {{/literacy_male}}
+		{{#literacy_female}} <span>literacy_female <b>{{ literacy_female }}</b></span> {{/literacy_female}}
+		{{#school_years_total}} <span>school_years_total <b>{{ school_years_total }}</b></span> {{/school_years_total}}
+		{{#school_years_male}} <span>school_years_male <b>{{ school_years_male }}</b></span> {{/school_years_male}}
+		{{#school_years_female}} <span>school_years_female <b>{{ school_years_female }}</b></span> {{/school_years_female}}
+		{{#child_labor}} <span>child_labor <b>{{ child_labor }}</b></span> {{/child_labor}}
+		{{#child_labor_percentage}} <span>child_labor_percentage <b>{{ child_labor_percentage }}</b></span> {{/child_labor_percentage}}
+		{{#unemployment_youth_total}} <span>unemployment_youth_total <b>{{ unemployment_youth_total }}</b></span> {{/unemployment_youth_total}}
+		{{#unemployment_youth_male}} <span>unemployment_youth_male <b>{{ unemployment_youth_male }}</b></span> {{/unemployment_youth_male}}
+		{{#unemployment_youth_female}} <span>unemployment_youth_female <b>{{ unemployment_youth_female }}</b></span> {{/unemployment_youth_female}}
+	</div>
+	</div>
+	{{/people}}
+	</div>
+
+	</div>

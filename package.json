@@ -1,6 +1,6 @@
 {
   "name": "world-factbook",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A javascript project for interacting with the world factbook",
   "author": "Jonathan Bitgood <jon@dbs.org>",
   "homepage": "https://github.com/jonbitgood/world-factbook#readme",
@@ -12,7 +12,7 @@
     "src"
   ],
   "scripts": {
-	"gen-templates": "./node_modules/hogan.js/bin/hulk ./templates/* > ./src/templates-gen.js",
+    "gen-templates": "echo \"define(function(templates) {return {templates: function(section) {var Hogan = require('hogan.js');\" > ./src/$THEME-templates.js && cd templates/$THEME/ && ../../node_modules/hogan.js/bin/hulk --variable=templates ./* >> ../../src/$THEME-templates.js && echo \"if(section) return templates[section];return templates;}}});\" >> ../../src/$THEME-templates.js",
     "fetch-factbook": "cd src/data && git clone https://github.com/factbook/factbook.json.git factbook && mv */*.json ./ && rm -rf */ && rm -rf *.md",
     "lint": "eslint src/**/*.js test/**/*.js",
     "start": "node src/index.js"
@@ -28,10 +28,12 @@
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-plugin-transform-runtime": "6.23.0",
     "babel-preset-env": "1.7.0",
+    "cross-env": "5.2.0",
     "hogan.js": "3.0.2"
   },
   "devDependencies": {
     "@types/jest": "23.0.2",
+    "babel-code-frame": "6.26.0",
     "coveralls": "3.0.1",
     "eslint": "4.19.1",
     "eslint-config-prettier": "2.9.0",
