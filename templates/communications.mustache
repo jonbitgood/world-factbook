@@ -1,0 +1,20 @@
+{{#communications}}
+	<div class="row">
+		<h1 class="text-centered">Communications</h1>
+		<div class="medium-8 columns">
+			{{#phone_system_domestic}}<div class="description">{{phone_system_domestic}}</div>{{/phone_system_domestic}}
+			{{#phone_system_international}}<div class="description">{{phone_system_international}}</div>{{/phone_system_international}}
+			{{#phone_system_general_assessment}}<div class="description">{{phone_system_general_assessment}}</div>{{/phone_system_general_assessment}}
+			{{#broadcast_media}}<div class="description">{{broadcast_media}}</div>{{/broadcast_media}}
+		</div>
+		<div class="medium-4 columns">
+			{{#fixed_phones_total}}<div class="medium-6 columns"><div class="stat">{{ fixed_phones_total }}</div><p>country.fixed_phones</p></div>{{/fixed_phones_total}}
+			{{#mobile_phones_total}}<div class="medium-6 columns"><div class="stat">{{ mobile_phones_total }}</div><p>country.mobile_phones</p></div>{{/mobile_phones_total}}
+			{{#internet_country_code}}<div class="medium-6 columns"><div class="stat">{{ internet_country_code }}</div><p>country.internet_country_code</p></div>{{/internet_country_code}}
+			{{#internet_total_users}}<div class="medium-6 columns"><div class="stat">{{ internet_total_users }}</div><p>country.internet_users</p></div>{{/internet_total_users}}
+			{{#internet_population_percent}}<div class="medium-6 columns"><div class="stat">{{ internet_population_percent }}%</div><p>country.internet_population_percent</p></div>{{/internet_population_percent}}
+			{{#fixed_phones_subs_per_100}}<div class="medium-12 columns"><div class="stat">{{ fixed_phones_subs_per_100 }}</div><p>country.fixed_phone_subs</p></div>{{/fixed_phones_subs_per_100}}
+			{{#mobile_phones_subs_per_100}}<div class="medium-12 columns"><div class="stat">{{ mobile_phones_subs_per_100 }}</div><p>country.mobile_phone_subs</p></div>{{/mobile_phones_subs_per_100}}
+		</div>
+	</div>
+{{/communications}}

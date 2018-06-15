@@ -1,0 +1,47 @@
+{
+  "name": "world-factbook",
+  "version": "1.0.0",
+  "description": "A javascript project for interacting with the world factbook",
+  "author": "Jonathan Bitgood <jon@dbs.org>",
+  "homepage": "https://github.com/confirmed/world-factbook#readme",
+  "keywords": [
+    "node"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+	"gen-templates": "./node_modules/hogan.js/bin/hulk ./templates/* > ./src/templates-gen.js",
+    "fetch-factbook": "cd src/data && git clone https://github.com/factbook/factbook.json.git factbook && mv */*.json ./ && rm -rf */ && rm -rf *.md",
+    "coverage": "jest --colors --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --colors --verbose",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "start": "node src/index.js",
+    "test": "npm run lint && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/confirmed/world-factbook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/confirmed/world-factbook/issues"
+  },
+  "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-preset-env": "1.7.0",
+    "hogan.js": "3.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "23.0.2",
+    "coveralls": "3.0.1",
+    "eslint": "4.19.1",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "jest": "23.1.0",
+    "prettier": "1.13.5"
+  },
+  "license": "MIT"
+}

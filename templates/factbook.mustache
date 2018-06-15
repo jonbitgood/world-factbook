@@ -1,0 +1,247 @@
+{{#communications}}
+<div class="row">
+	<h1 class="text-centered">Communications</h1>
+	<div class="medium-8 columns">
+		{{#phone_system_domestic}}<div class="description">{{phone_system_domestic}}</div><p>count') }}</p>{{/phone_system_domestic}}
+		{{#phone_system_international}}<div class="description">{{phone_system_international}}</div><p>count') }}</p>{{/phone_system_international}}
+		{{#phone_system_general_assessment}}<div class="description">{{phone_system_general_assessment}}</div><p>count') }}</p>{{/phone_system_general_assessment}}
+		{{#broadcast_media}}<div class="description">{{broadcast_media}}</div><p>count') }}</p>{{/broadcast_media}}
+	</div>
+	<div class="medium-4 columns">
+		{{#fixed_phones_total}}<div class="medium-6 columns"><div class="stat">{{ fixed_phones_total }}</div><p>country.fixed_phones</p></div>{{/fixed_phones_total}}
+		{{#mobile_phones_total}}<div class="medium-6 columns"><div class="stat">{{ mobile_phones_total }}</div><p>country.mobile_phones</p></div>{{/mobile_phones_total}}
+		{{#internet_country_code}}<div class="medium-6 columns"><div class="stat">{{ internet_country_code }}</div><p>country.internet_country_code</p></div>{{/internet_country_code}}
+		{{#internet_total_users}}<div class="medium-6 columns"><div class="stat">{{ internet_total_users }}</div><p>country.internet_users</p></div>{{/internet_total_users}}
+		{{#internet_population_percent}}<div class="medium-6 columns"><div class="stat">{{ internet_population_percent }}%</div><p>country.internet_population_percent</p></div>{{/internet_population_percent}}
+		{{#fixed_phones_subs_per_100}}<div class="medium-12 columns"><div class="stat">{{ fixed_phones_subs_per_100 }}</div><p>country.fixed_phone_subs</p></div>{{/fixed_phones_subs_per_100}}
+		{{#mobile_phones_subs_per_100}}<div class="medium-12 columns"><div class="stat">{{ mobile_phones_subs_per_100 }}</div><p>country.mobile_phone_subs</p></div>{{/mobile_phones_subs_per_100}}
+	</div>
+</div>
+{{/communications}}
+
+{{#economy}}
+<div class="row">
+	{{#overview}}<div class="medium-3 columns"><div class="stat">economic_overview</div><p>{{ overview }}</p></div>{{/overview}}
+	{{#gdp_power_parity}}<div class="medium-3 columns"><div class="stat">gdp_power_parity</div><p>{{ gdp_power_parity }}</p></div>{{/gdp_power_parity}}
+	{{#gdp_real_growth}}<div class="medium-3 columns"><div class="stat">gdp_real_growth</div><p>{{ gdp_real_growth }}</p></div>{{/gdp_real_growth}}
+	{{#gdp_per_capita}}<div class="medium-3 columns"><div class="stat">gdp_per_capita</div><p>{{ gdp_per_capita }}</p></div>{{/gdp_per_capita}}
+	{{#gdp_household_consumption}}<div class="medium-3 columns"><div class="stat">gdp_household_consumption</div><p>{{ gdp_household_consumption }}</p></div>{{/gdp_household_consumption}}
+	{{#gdp_consumption}}<div class="medium-3 columns"><div class="stat">gdp_consumption</div><p>{{ gdp_consumption }}</p></div>{{/gdp_consumption}}
+	{{#gdp_investment_in_fixed_capital}}<div class="medium-3 columns"><div class="stat">gdp_investment_in_fixed_capital</div><p>{{ gdp_investment_in_fixed_capital }}</p></div>{{/gdp_investment_in_fixed_capital}}
+	{{#gdp_investment_in_inventories}}<div class="medium-3 columns"><div class="stat">gdp_investment_in_inventories</div><p>{{ gdp_investment_in_inventories }}</p></div>{{/gdp_investment_in_inventories}}
+	{{#gdp_exports}}<div class="medium-3 columns"><div class="stat">gdp_exports</div><p>{{ gdp_exports }}</p></div>{{/gdp_exports}}
+	{{#gdp_imports}}<div class="medium-3 columns"><div class="stat">gdp_imports</div><p>{{ gdp_imports }}</p></div>{{/gdp_imports}}
+	{{#gdp_sector_agriculture}}<div class="medium-3 columns"><div class="stat">gdp_sector_agriculture</div><p>{{ gdp_sector_agriculture }}</p></div>{{/gdp_sector_agriculture}}
+	{{#gdp_sector_industry}}<div class="medium-3 columns"><div class="stat">gdp_sector_industry</div><p>{{ gdp_sector_industry }}</p></div>{{/gdp_sector_industry}}
+	{{#gdp_sector_services}}<div class="medium-3 columns"><div class="stat">gdp_sector_services</div><p>{{ gdp_sector_services }}</p></div>{{/gdp_sector_services}}
+	{{#agriculture_products}}<div class="medium-3 columns"><div class="stat">agriculture_products</div><p>{{ agriculture_products }}</p></div>{{/agriculture_products}}
+	{{#industries}}<div class="medium-3 columns"><div class="stat">industries</div><p>{{ industries }}</p></div>{{/industries}}
+	{{#industrial_growth_rate}}<div class="medium-3 columns"><div class="stat">industrial_growth_rate</div><p>{{ industrial_growth_rate }}</p></div>{{/industrial_growth_rate}}
+	{{#labor_force}}<div class="medium-3 columns"><div class="stat">labor_force</div><p>{{ labor_force }}</p></div>{{/labor_force}}
+	{{#labor_force_notes}}<div class="medium-3 columns"><div class="stat">labor_force_notes</div><p>{{ labor_force_notes }}</p></div>{{/labor_force_notes}}
+	{{#labor_force_services}}<div class="medium-3 columns"><div class="stat">labor_force_services</div><p>{{ labor_force_services }}</p></div>{{/labor_force_services}}
+	{{#labor_force_industry}}<div class="medium-3 columns"><div class="stat">labor_force_industry</div><p>{{ labor_force_industry }}</p></div>{{/labor_force_industry}}
+	{{#labor_force_agriculture}}<div class="medium-3 columns"><div class="stat">labor_force_agriculture</div><p>{{ labor_force_agriculture }}</p></div>{{/labor_force_agriculture}}
+	{{#labor_force_occupation_notes}}<div class="medium-3 columns"><div class="stat">labor_force_occupation_notes</div><p>{{ labor_force_occupation_notes }}</p></div>{{/labor_force_occupation_notes}}
+	{{#unemployment_rate}}<div class="medium-3 columns"><div class="stat">unemployment_rate</div><p>{{ unemployment_rate }}</p></div>{{/unemployment_rate}}
+	{{#population_below_poverty}}<div class="medium-3 columns"><div class="stat">population_below_poverty</div><p>{{ population_below_poverty }}</p></div>{{/population_below_poverty}}
+	{{#household_income_lowest_10}}<div class="medium-3 columns"><div class="stat">household_income_lowest_10</div><p>{{ household_income_lowest_10 }}</p></div>{{/household_income_lowest_10}}
+	{{#household_income_highest_10}}<div class="medium-3 columns"><div class="stat">household_income_highest_10</div><p>{{ household_income_highest_10 }}</p></div>{{/household_income_highest_10}}
+	{{#budget_revenues}}<div class="medium-3 columns"><div class="stat">budget_revenues</div><p>{{ budget_revenues }}</p></div>{{/budget_revenues}}
+	{{#taxes_revenues}}<div class="medium-3 columns"><div class="stat">taxes_revenues</div><p>{{ taxes_revenues }}</p></div>{{/taxes_revenues}}
+	{{#budget_net}}<div class="medium-3 columns"><div class="stat">budget_net</div><p>{{ budget_net }}</p></div>{{/budget_net}}
+	{{#public_debt}}<div class="medium-3 columns"><div class="stat">public_debt</div><p>{{ public_debt }}</p></div>{{/public_debt}}
+	{{#external_debt}}<div class="medium-3 columns"><div class="stat">external_debt</div><p>{{ external_debt }}</p></div>{{/external_debt}}
+	{{#fiscal_year}}<div class="medium-3 columns"><div class="stat">fiscal_year</div><p>{{ fiscal_year }}</p></div>{{/fiscal_year}}
+	{{#inflation_rate}}<div class="medium-3 columns"><div class="stat">inflation_rate</div><p>{{ inflation_rate }}</p></div>{{/inflation_rate}}
+	{{#central_bank_discount_rate}}<div class="medium-3 columns"><div class="stat">central_bank_discount_rate</div><p>{{ central_bank_discount_rate }}</p></div>{{/central_bank_discount_rate}}
+	{{#commercial_bank_prime_lending_rate}}<div class="medium-3 columns"><div class="stat">commercial_bank_prime_lending_rate</div><p>{{ commercial_bank_prime_lending_rate }}</p></div>{{/commercial_bank_prime_lending_rate}}
+	{{#stock_money_narrow}}<div class="medium-3 columns"><div class="stat">stock_money_narrow</div><p>{{ stock_money_narrow }}</p></div>{{/stock_money_narrow}}
+	{{#stock_money_broad}}<div class="medium-3 columns"><div class="stat">stock_money_broad</div><p>{{ stock_money_broad }}</p></div>{{/stock_money_broad}}
+	{{#stock_domestic_credit}}<div class="medium-3 columns"><div class="stat">stock_domestic_credit</div><p>{{ stock_domestic_credit }}</p></div>{{/stock_domestic_credit}}
+	{{#exports}}<div class="medium-3 columns"><div class="stat">exports</div><p>{{ exports }}</p></div>{{/exports}}
+	{{#exports_commodities}}<div class="medium-3 columns"><div class="stat">exports_commodities</div><p>{{ exports_commodities }}</p></div>{{/exports_commodities}}
+	{{#exports_partners}}<div class="medium-3 columns"><div class="stat">exports_partners</div><p>{{ exports_partners }}</p></div>{{/exports_partners}}
+	{{#imports}}<div class="medium-3 columns"><div class="stat">imports</div><p>{{ imports }}</p></div>{{/imports}}
+	{{#imports_commodities}}<div class="medium-3 columns"><div class="stat">imports_commodities</div><p>{{ imports_commodities }}</p></div>{{/imports_commodities}}
+	{{#imports_partners}}<div class="medium-3 columns"><div class="stat">imports_partners</div><p>{{ imports_partners }}</p></div>{{/imports_partners}}
+</div>
+{{/economy}}
+
+{{#energy}}
+{{#electricity_production}}<div class="medium-3 columns"><span class="stat">electricity_production</span><p>{{ electricity_production }}</p></div>{{/electricity_production}}
+{{#electricity_consumption}}<div class="medium-3 columns"><span class="stat">electricity_consumption</span><p>{{ electricity_consumption }}</p></div>{{/electricity_consumption}}
+{{#electricity_exports}}<div class="medium-3 columns"><span class="stat">electricity_exports</span><p>{{ electricity_exports }}</p></div>{{/electricity_exports}}
+{{#electricity_imports}}<div class="medium-3 columns"><span class="stat">electricity_imports</span><p>{{ electricity_imports }}</p></div>{{/electricity_imports}}
+{{#electricity_generating_capacity}}<div class="medium-3 columns"><span class="stat">electricity_generating_capacity</span><p>{{ electricity_generating_capacity }}</p></div>{{/electricity_generating_capacity}}
+{{#electricity_fossil_fuels}}<div class="medium-3 columns"><span class="stat">electricity_fossil_fuels</span><p>{{ electricity_fossil_fuels }}</p></div>{{/electricity_fossil_fuels}}
+{{#electricity_nuclear}}<div class="medium-3 columns"><span class="stat">electricity_nuclear</span><p>{{ electricity_nuclear }}</p></div>{{/electricity_nuclear}}
+{{#electricity_hydroelectric}}<div class="medium-3 columns"><span class="stat">electricity_hydroelectric</span><p>{{ electricity_hydroelectric }}</p></div>{{/electricity_hydroelectric}}
+{{#electricity_renewable}}<div class="medium-3 columns"><span class="stat">electricity_renewable</span><p>{{ electricity_renewable }}</p></div>{{/electricity_renewable}}
+{{#crude_oil_production}}<div class="medium-3 columns"><span class="stat">crude_oil_production</span><p>{{ crude_oil_production }}</p></div>{{/crude_oil_production}}
+{{#crude_oil_exports}}<div class="medium-3 columns"><span class="stat">crude_oil_exports</span><p>{{ crude_oil_exports }}</p></div>{{/crude_oil_exports}}
+{{#crude_oil_imports}}<div class="medium-3 columns"><span class="stat">crude_oil_imports</span><p>{{ crude_oil_imports }}</p></div>{{/crude_oil_imports}}
+{{#crude_oil_reserves}}<div class="medium-3 columns"><span class="stat">crude_oil_reserves</span><p>{{ crude_oil_reserves }}</p></div>{{/crude_oil_reserves}}
+{{#petrol_production}}<div class="medium-3 columns"><span class="stat">petrol_production</span><p>{{ petrol_production }}</p></div>{{/petrol_production}}
+{{#petrol_consumption}}<div class="medium-3 columns"><span class="stat">petrol_consumption</span><p>{{ petrol_consumption }}</p></div>{{/petrol_consumption}}
+{{#petrol_exports}}<div class="medium-3 columns"><span class="stat">petrol_exports</span><p>{{ petrol_exports }}</p></div>{{/petrol_exports}}
+{{#petrol_imports}}<div class="medium-3 columns"><span class="stat">petrol_imports</span><p>{{ petrol_imports }}</p></div>{{/petrol_imports}}
+{{#natural_gas_production}}<div class="medium-3 columns"><span class="stat">natural_gas_production</span><p>{{ natural_gas_production }}</p></div>{{/natural_gas_production}}
+{{#natural_gas_consumption}}<div class="medium-3 columns"><span class="stat">natural_gas_consumption</span><p>{{ natural_gas_consumption }}</p></div>{{/natural_gas_consumption}}
+{{#natural_gas_exports}}<div class="medium-3 columns"><span class="stat">natural_gas_exports</span><p>{{ natural_gas_exports }}</p></div>{{/natural_gas_exports}}
+{{#natural_gas_imports}}<div class="medium-3 columns"><span class="stat">natural_gas_imports</span><p>{{ natural_gas_imports }}</p></div>{{/natural_gas_imports}}
+{{#natural_gas_reserves}}<div class="medium-3 columns"><span class="stat">natural_gas_reserves</span><p>{{ natural_gas_reserves }}</p></div>{{/natural_gas_reserves}}
+{{#co2_output}}<div class="medium-3 columns"><span class="stat">co2_output</span><p>{{ co2_output }}</p></div>{{/co2_output}}
+{{/energy}}
+
+{{#geography}}
+	<div class="row">
+		<h1>GEOGRAPHY SECTION</h1>
+		{{#country_id}}<div class="medium-3 columns"><b>country id</b><p>{{country_id}}</p></div>{{/country_id}}
+		{{#location_description}}<div class="medium-3 columns"><b>=Location Description</b><p>{{location_description}}</p></div>{{/location_description}}
+		{{#latitude}}<div class="medium-3 columns"><b>Latitude</b><p>{{latitude}}</p></div>{{/latitude}}
+		{{#longitude}}<div class="medium-3 columns"><b>Longitude</b><p>{{longitude}}</p></div>{{/longitude}}
+		{{#mapReferences}}<div class="medium-3 columns"><b>Map References</b><p>{{mapReferences}}</p></div>{{/mapReferences}}
+		{{#area_sqkm_total}}<div class="medium-3 columns"><b>Area sqkm Total</b><p>{{area_sqkm_total}}</p></div>{{/area_sqkm_total}}
+		{{#area_sqkm_land}}<div class="medium-3 columns"><b>Area sqkm Land</b><p>{{area_sqkm_land}}</p></div>{{/area_sqkm_land}}
+		{{#area_sqkm_water}}<div class="medium-3 columns"><b>Area sqkm Water</b><p>{{area_sqkm_water}}</p></div>{{/area_sqkm_water}}
+		{{#area_km_coastline}}<div class="medium-3 columns"><b>Area km Coastline</b><p>{{area_km_coastline}}</p></div>{{/area_km_coastline}}
+		{{#area_note}}<div class="medium-3 columns"><b>Area Note</b><p>{{area_note}}</p></div>{{/area_note}}
+		{{#climate}}<div class="medium-3 columns"><b>Climate</b><p>{{climate}}</p></div>{{/climate}}
+		{{#terrain}}<div class="medium-3 columns"><b>Terrain</b><p>{{terrain}}</p></div>{{/terrain}}
+		{{#hazards}}<div class="medium-3 columns"><b>Hazards</b><p>{{hazards}}</p></div>{{/hazards}}
+		{{#notes}}<div class="medium-3 columns"><b>Notes</b><p>{{notes}}</p></div>{{/notes}}
+	</div>
+{{/geography}}
+
+{{#government}}
+<div class="row">
+	{{#name}}<div class="medium-8 columns centered"><span class="stat">name</span><p>{{ name }}</p></div>{{/name}}
+	<div class="row">
+		{{#administrative_divisions}}<div class="medium-8 columns"><span class="description">administrative_divisions</span><p>{{ administrative_divisions }}</p></div>{{/administrative_divisions}}
+		{{#administrative_divisions_note}}<div class="medium-4 columns"><span class="description">administrative_divisions_note</span><p>{{ administrative_divisions_note }}</p></div>{{/administrative_divisions_note}}
+	</div>
+	{{#conventional_long_form}}<div class="medium-3 columns"><span class="description">conventional_long_form</span><p>{{ conventional_long_form }} </p></div>{{/conventional_long_form}}
+	{{#conventional_short_form}}<div class="medium-3 columns"><span class="description">conventional_short_form</span><p>{{ conventional_short_form }}</p></div>{{/conventional_short_form}}
+	{{#name_etymology}}<div class="medium-3 columns"><span class="description">name_etymology</span><p>{{ name_etymology }}</p></div>{{/name_etymology}}
+	{{#government_type}}<div class="medium-3 columns"><span class="description">government_type</span><p>{{ government_type }}</p></div>{{/government_type}}
+	{{#capital}}<div class="medium-3 columns"><span class="stat">capital</span><p>{{ capital }}</p></div>{{/capital}}
+	{{#capital_coordinates}}<div class="medium-3 columns"><span class="stat">capital_coordinates</span><p>{{ capital_coordinates }}</p></div>{{/capital_coordinates}}
+	{{#capital_time_zone}}<div class="medium-3 columns"><span class="description">capital_time_zone</span><p>{{ capital_time_zone }}</p></div>{{/capital_time_zone}}
+	<div class="row">
+		{{#independence}}<div class="medium-3 columns"><span class="stat">independence</span><p>{{ independence }}</p></div>{{/independence}}
+		{{#national_holiday}}<div class="medium-3 columns"><span class="stat">national_holiday</span><p>{{ national_holiday }}</p></div>{{/national_holiday}}
+		{{#constitution}}<div class="medium-3 columns"><span class="description">constitution</span><p>{{ constitution }}</p></div>{{/constitution}}
+		{{#legal_system}}<div class="medium-3 columns"><span class="stat">legal_system</span><p>{{ legal_system }}</p></div>{{/legal_system}}
+		{{#citizenship}}<div class="medium-3 columns"><span class="stat">citizenship</span><p>{{ citizenship }}</p></div>{{/citizenship}}
+		{{#suffrage}}<div class="medium-3 columns"><span class="stat">suffrage</span><p>{{ suffrage }}</p></div>{{/suffrage}}
+		{{#executive_chief_of_state}}<div class="medium-3 columns"><span class="description">executive_chief_of_state</span><p>{{ executive_chief_of_state }}</p></div>{{/executive_chief_of_state}}
+		{{#executive_head_of_government}}<div class="medium-3 columns"><span class="description">executive_head_of_government</span><p>{{ executive_head_of_government }}</p></div>{{/executive_head_of_government}}
+		{{#executive_cabinet}}<div class="medium-3 columns"><span class="description">executive_cabinet</span><p>{{ executive_cabinet }}</p></div>{{/executive_cabinet}}
+		{{#executive_elections}}<div class="medium-3 columns"><span class="description">executive_elections</span><p>{{ executive_elections }}</p></div>{{/executive_elections}}
+		{{#executive_election_results}}<div class="medium-3 columns"><span class="description">executive_election_results</span><p>{{ executive_election_results }}</p></div>{{/executive_election_results}}
+		{{#legislative_description}}<div class="medium-3 columns"><span class="description">legislative_description</span><p>{{ legislative_description }}</p></div>{{/legislative_description}}
+		{{#legislative_elections}}<div class="medium-3 columns"><span class="description">legislative_elections</span><p>{{ legislative_elections }}</p></div>{{/legislative_elections}}
+		{{#legislative_election_results}}<div class="medium-3 columns"><span class="description">legislative_election_results</span><p>{{ legislative_election_results }}</p></div>{{/legislative_election_results}}
+		{{#legislative_highest_courts}}<div class="medium-3 columns"><span class="description">legislative_highest_courts</span><p>{{ legislative_highest_courts }}</p></div>{{/legislative_highest_courts}}
+		{{#legislative_judge_selection}}<div class="medium-6 columns"><span class="description">legislative_judge_selection</span><p>{{ legislative_judge_selection }}</p></div>{{/legislative_judge_selection}}
+		{{#legislative_subordinate_courts}}<div class="medium-3 columns"><span class="description">legislative_subordinate_courts</span><p>{{ legislative_subordinate_courts }}</p></div>{{/legislative_subordinate_courts}}
+		{{#political_parties}}<div class="medium-3 columns"><span class="description">political_parties</span><p>{{ political_parties }}</p></div>{{/political_parties}}
+		{{#political_pressure}}<div class="medium-3 columns"><span class="description">political_pressure</span><p>{{ political_pressure }}</p></div>{{/political_pressure}}
+		{{#international_organization_participation}}<div class="medium-3 columns"><span class="description">international_organization_participation</span><p>{{ international_organization_participation }}</p></div>{{/international_organization_participation}}
+		{{#diplomatic_representation_in_usa}}<div class="medium-3 columns"><span class="description">diplomatic_representation_in_usa</span><p>{{ diplomatic_representation_in_usa }}</p></div>{{/diplomatic_representation_in_usa}}
+		{{#diplomatic_representation_from_usa}}<div class="medium-3 columns"><span class="description">diplomatic_representation_from_usa</span><p>{{ diplomatic_representation_from_usa }}</p></div>{{/diplomatic_representation_from_usa}}
+		{{#flag_description}}<div class="medium-3 columns"><span class="description">flag_description</span><p>{{ flag_description }}</p></div>{{/flag_description}}
+		{{#national_symbols}}<div class="medium-3 columns"><span class="description">national_symbols</span><p>{{ national_symbols }}</p></div>{{/national_symbols}}
+		{{#national_anthem}}<div class="medium-3 columns"><span class="description">national_anthem</span><p>{{ national_anthem }}</p></div>{{/national_anthem}}
+	</div>
+</div>
+{{/government}}
+
+{{#issues}}
+	{{#international_disputes}}<div class="medium-4 columns"><div class="description">{{ international_disputes }}</div><p>{{ international_disputes }}</p></div>{{/international_disputes}}
+	{{#illicit_drugs}}<div class="medium-4 columns"><div class="description">{{ illicit_drugs }}</div><p>{{ illicit_drugs }}</p></div>{{/illicit_drugs}}
+	{{#refugees}}<div class="medium-4 columns"><div class="description">{{ refugees }}</div><p>{{ refugees }}</p></div>{{/refugees}}
+{{/issues}}
+
+{{#people}}
+{{#population}}<div class="medium-3 columns"><div class="stat">{{ population }}</div><p>Population</p></div>{{/population}}
+{{#population_date}}<div class="medium-3 columns"><div class="stat">{{ population_date }}</div><p>Population</p></div>{{/population_date}}
+{{#nationality_noun}}<div class="medium-3 columns"><div class="stat">{{ nationality_noun }}</div><p>Nationality</p></div>{{/nationality_noun}}
+{{#nationality_adjective}}<div class="medium-3 columns"><div class="stat">{{ nationality_adjective }}</div><p>Nationality</p></div>{{/nationality_adjective}}
+{{#age_structure_14}}<div class="medium-3 columns"><div class="stat">{{ age_structure_14 }}</div><p>age_structure_14</p></div>{{/age_structure_14}}
+{{#age_structure_24}}<div class="medium-3 columns"><div class="stat">{{ age_structure_24 }}</div><p>age_structure_24</p></div>{{/age_structure_24}}
+{{#age_structure_54}}<div class="medium-3 columns"><div class="stat">{{ age_structure_54 }}</div><p>age_structure_54</p></div>{{/age_structure_54}}
+{{#age_structure_64}}<div class="medium-3 columns"><div class="stat">{{ age_structure_64 }}</div><p>age_structure_64</p></div>{{/age_structure_64}}
+{{#age_structure_65}}<div class="medium-3 columns"><div class="stat">{{ age_structure_65 }}</div><p>age_structure_65</p></div>{{/age_structure_65}}
+{{#dependency_total}}<div class="medium-3 columns"><div class="stat">{{ dependency_total }}</div><p>dependency_total</p></div>{{/dependency_total}}
+{{#dependency_youth}}<div class="medium-3 columns"><div class="stat">{{ dependency_youth }}</div><p>dependency_youth</p></div>{{/dependency_youth}}
+{{#dependency_elder}}<div class="medium-3 columns"><div class="stat">{{ dependency_elder }}</div><p>dependency_elder</p></div>{{/dependency_elder}}
+{{#dependency_potential}}<div class="medium-3 columns"><div class="stat">{{ dependency_potential }}</div><p>dependency_potential</p></div>{{/dependency_potential}}
+{{#median_age_total}}<div class="medium-3 columns"><div class="stat">{{ median_age_total }}</div><p>median_age_total</p></div>{{/median_age_total}}
+{{#median_age_male}}<div class="medium-3 columns"><div class="stat">{{ median_age_male }}</div><p>median_age_male</p></div>{{/median_age_male}}
+{{#median_age_female}}<div class="medium-3 columns"><div class="stat">{{ median_age_female }}</div><p>median_age_female</p></div>{{/median_age_female}}
+{{#population_growth_rate_percentage}}<div class="medium-3 columns"><div class="stat">{{ population_growth_rate_percentage }}</div><p>population_growth_rate_percentage</p></div>{{/population_growth_rate_percentage}}
+{{#birth_rate_per_1k}}<div class="medium-3 columns"><div class="stat">{{ birth_rate_per_1k }}</div><p>birth_rate_per_1k</p></div>{{/birth_rate_per_1k}}
+{{#death_rate_per_1k}}<div class="medium-3 columns"><div class="stat">{{ death_rate_per_1k }}</div><p>death_rate_per_1k</p></div>{{/death_rate_per_1k}}
+{{#net_migration_per_1k}}<div class="medium-3 columns"><div class="stat">{{ net_migration_per_1k }}</div><p>net_migration_per_1k</p></div>{{/net_migration_per_1k}}
+{{#population_distribution}}<div class="medium-3 columns"><div class="stat">{{ population_distribution }}</div><p>population_distribution</p></div>{{/population_distribution}}
+{{#sex_ratio_birth}}<div class="medium-3 columns"><div class="stat">{{ sex_ratio_birth }}</div><p>population_distribution</p></div>{{/sex_ratio_birth}}
+{{#sex_ratio_14}}<div class="medium-3 columns"><div class="stat">{{ sex_ratio_14 }}</div><p>sex_ratio_birth</p></div>{{/sex_ratio_14}}
+{{#sex_ratio_24}}<div class="medium-3 columns"><div class="stat">{{ sex_ratio_24 }}</div><p>sex_ratio_14</p></div>{{/sex_ratio_24}}
+{{#sex_ratio_54}}<div class="medium-3 columns"><div class="stat">{{ sex_ratio_54 }}</div><p>sex_ratio_24</p></div>{{/sex_ratio_54}}
+{{#sex_ratio_64}}<div class="medium-3 columns"><div class="stat">{{ sex_ratio_64 }}</div><p>sex_ratio_54</p></div>{{/sex_ratio_64}}
+{{#sex_ratio_65}}<div class="medium-3 columns"><div class="stat">{{ sex_ratio_65 }}</div><p>sex_ratio_64</p></div>{{/sex_ratio_65}}
+{{#sex_ratio_total}}<div class="medium-3 columns"><div class="stat">{{ sex_ratio_total }}</div><p>sex_ratio_65</p></div>{{/sex_ratio_total}}
+{{#mother_age_first_birth}}<div class="medium-3 columns"><div class="stat">{{ mother_age_first_birth }}</div><p>sex_ratio_total</p></div>{{/mother_age_first_birth}}
+{{#maternal_mortality_rate}}<div class="medium-3 columns"><div class="stat">{{ maternal_mortality_rate }}</div><p>mother_age_first_birth</p></div>{{/maternal_mortality_rate}}
+{{#infant_mortality_per_1k_total}}<div class="medium-3 columns"><div class="stat">{{ infant_mortality_per_1k_total }}</div><p>maternal_mortality_rate</p></div>{{/infant_mortality_per_1k_total}}
+{{#infant_mortality_per_1k_male}}<div class="medium-3 columns"><div class="stat">{{ infant_mortality_per_1k_male }}</div><p>infant_mortality_per_1k_total</p></div>{{/infant_mortality_per_1k_male}}
+{{#infant_mortality_per_1k_female}}<div class="medium-3 columns"><div class="stat">{{ infant_mortality_per_1k_female }}</div><p>infant_mortality_per_1k_male</p></div>{{/infant_mortality_per_1k_female}}
+{{#life_expectancy_at_birth_total}}<div class="medium-3 columns"><div class="stat">{{ life_expectancy_at_birth_total }}</div><p>infant_mortality_per_1k_female</p></div>{{/life_expectancy_at_birth_total}}
+{{#life_expectancy_at_birth_male}}<div class="medium-3 columns"><div class="stat">{{ life_expectancy_at_birth_male }}</div><p>life_expectancy_at_birth_total</p></div>{{/life_expectancy_at_birth_male}}
+{{#life_expectancy_at_birth_female}}<div class="medium-3 columns"><div class="stat">{{ life_expectancy_at_birth_female }}</div><p>life_expectancy_at_birth_male</p></div>{{/life_expectancy_at_birth_female}}
+{{#total_fertility_rate}}<div class="medium-3 columns"><div class="stat">{{ total_fertility_rate }}</div><p>life_expectancy_at_birth_female</p></div>{{/total_fertility_rate}}
+{{#contraceptive_prevalence}}<div class="medium-3 columns"><div class="stat">{{ contraceptive_prevalence }}</div><p>total_fertility_rate</p></div>{{/contraceptive_prevalence}}
+{{#health_expenditures}}<div class="medium-3 columns"><div class="stat">{{ health_expenditures }}</div><p>contraceptive_prevalence</p></div>{{/health_expenditures}}
+{{#physicians}}<div class="medium-3 columns"><div class="stat">{{ physicians }}</div><p>health_expenditures</p></div>{{/physicians}}
+{{#hospital_beds}}<div class="medium-3 columns"><div class="stat">{{ hospital_beds }}</div><p>physicians</p></div>{{/hospital_beds}}
+{{#drinking_water_source_urban_improved}}<div class="medium-3 columns"><div class="stat">{{ drinking_water_source_urban_improved }}</div><p>hospital_beds</p></div>{{/drinking_water_source_urban_improved}}
+{{#drinking_water_source_rural_improved}}<div class="medium-3 columns"><div class="stat">{{ drinking_water_source_rural_improved }}</div><p>drinking_water_source_urban_improved</p></div>{{/drinking_water_source_rural_improved}}
+{{#sanitation_facility_access_urban_improved}}<div class="medium-3 columns"><div class="stat">{{ sanitation_facility_access_urban_improved }}</div><p>drinking_water_source_rural_improved</p></div>{{/sanitation_facility_access_urban_improved}}
+{{#sanitation_facility_access_rural_improved}}<div class="medium-3 columns"><div class="stat">{{ sanitation_facility_access_rural_improved }}</div><p>sanitation_facility_access_urban_improved</p></div>{{/sanitation_facility_access_rural_improved}}
+{{#hiv_infection_rate}}<div class="medium-3 columns"><div class="stat">{{ hiv_infection_rate }}</div><p>sanitation_facility_access_rural_improved</p></div>{{/hiv_infection_rate}}
+{{#hiv_infected}}<div class="medium-3 columns"><div class="stat">{{ hiv_infected }}</div><p>hiv_infection_rate</p></div>{{/hiv_infected}}
+{{#hiv_deaths}}<div class="medium-3 columns"><div class="stat">{{ hiv_deaths }}</div><p>hiv_infected</p></div>{{/hiv_deaths}}
+{{#obesity_rate}}<div class="medium-3 columns"><div class="stat">{{ obesity_rate }}</div><p>hiv_deaths</p></div>{{/obesity_rate}}
+{{#underweight_children}}<div class="medium-3 columns"><div class="stat">{{ underweight_children }}</div><p>obesity_rate</p></div>{{/underweight_children}}
+{{#education_expenditures}}<div class="medium-3 columns"><div class="stat">{{ education_expenditures }}</div><p>underweight_children</p></div>{{/education_expenditures}}
+{{#literacy_definition}}<div class="medium-3 columns"><div class="stat">{{ literacy_definition }}</div><p>education_expenditures</p></div>{{/literacy_definition}}
+{{#literacy_total}}<div class="medium-3 columns"><div class="stat">{{ literacy_total }}</div><p>literacy_definition</p></div>{{/literacy_total}}
+{{#literacy_male}}<div class="medium-3 columns"><div class="stat">{{ literacy_male }}</div><p>literacy_total</p></div>{{/literacy_male}}
+{{#literacy_female}}<div class="medium-3 columns"><div class="stat">{{ literacy_female }}</div><p>literacy_male</p></div>{{/literacy_female}}
+{{#school_years_total}}<div class="medium-3 columns"><div class="stat">{{ school_years_total }}</div><p>literacy_female</p></div>{{/school_years_total}}
+{{#school_years_male}}<div class="medium-3 columns"><div class="stat">{{ school_years_male }}</div><p>school_years_total</p></div>{{/school_years_male}}
+{{#school_years_female}}<div class="medium-3 columns"><div class="stat">{{ school_years_female }}</div><p>school_years_male</p></div>{{/school_years_female}}
+{{#child_labor}}<div class="medium-3 columns"><div class="stat">{{ child_labor }}</div><p>school_years_female</p></div>{{/child_labor}}
+{{#child_labor_percentage}}<div class="medium-3 columns"><div class="stat">{{ child_labor_percentage }}</div><p>child_labor</p></div>{{/child_labor_percentage}}
+{{#unemployment_youth_total}}<div class="medium-3 columns"><div class="stat">{{ unemployment_youth_total }}</div><p>child_labor_percentage</p></div>{{/unemployment_youth_total}}
+{{#unemployment_youth_male}}<div class="medium-3 columns"><div class="stat">{{ unemployment_youth_male }}</div><p>unemployment_youth_total</p></div>{{/unemployment_youth_male}}
+{{#unemployment_youth_female}}<div class="medium-3 columns"><div class="stat">{{ unemployment_youth_female }}</div><p>unemployment_youth_male</p></div>{{/unemployment_youth_female}}
+{{/people}}
+
+{{#transportation}}
+	<div class="row">
+		{{#air_carriers}}<div class="medium-6 columns"><div class="stat">{{ air_carriers }}</div><p>air_carriers</p></div>{{/air_carriers}}
+		{{#aircraft}}<div class="medium-6 columns"><div class="stat">{{ aircraft }}</div><p>aircraft</p></div>{{/aircraft}}
+		{{#aircraft_passengers}}<div class="medium-6 columns"><div class="stat">{{ aircraft_passengers }}</div><p>aircraft_passengers</p></div>{{/aircraft_passengers}}
+		{{#aircraft_freight}}<div class="medium-6 columns"><div class="stat">{{ aircraft_freight }}</div><p>aircraft_freight</p></div>{{/aircraft_freight}}
+		{{#aircraft_code_prefix}}<div class="medium-6 columns"><div class="stat">{{ aircraft_code_prefix }}</div><p>aircraft_code_prefix</p></div>{{/aircraft_code_prefix}}
+		{{#airports}}<div class="medium-6 columns"><div class="stat">{{ airports }}</div><p>airports</p></div>{{/airports}}
+		{{#airports_paved}}<div class="medium-6 columns"><div class="stat">{{ airports_paved }}</div><p>airports_paved</p></div>{{/airports_paved}}
+		{{#airports_info_date}}<div class="medium-6 columns"><div class="stat">{{ airports_info_date }}</div><p>airports_info_date</p></div>{{/airports_info_date}}
+		{{#major_seaports}}<div class="medium-6 columns"><div class="stat">{{ major_seaports }}</div><p>major_seaports</p></div>{{/major_seaports}}
+		{{#oil_terminals}}<div class="medium-6 columns"><div class="stat">{{ oil_terminals }}</div><p>oil_terminals</p></div>{{/oil_terminals}}
+		{{#cruise_ports}}<div class="medium-6 columns"><div class="stat">{{ cruise_ports }}</div><p>cruise_ports</p></div>{{/cruise_ports}}
+	</div>
+{{/transportation}}
