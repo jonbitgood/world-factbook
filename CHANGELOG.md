@@ -1,5 +1,10 @@
 # Changelog
 
+## In the distant future
+* Actual testing
+* Companion JS Apps
+* API connection
+
 ## Coming Soon
 * Multiple Templates for common frameworks (Bootstrap/foundation)
 * Sass theme files for default template

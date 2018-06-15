@@ -36,16 +36,11 @@ $ git clone https://github.com/confirmed/world-factbook.git
 $ npm install
 ```
 
-* Running scripts
+* Generating Templates
 
-| Action                                   | Usage               |
-| ---------------------------------------- | ------------------- |
-| Starting development mode                | `npm start`         |
-| Linting code                             | `npm run lint`      |
-| Running unit tests                       | `npm run jest`      |
-| Running code coverage                    | `npm run coverage`  |
-| Running lint + tests                     | `npm test`          |
-| Sending coverage results to Coveralls.io | `npm run coveralls` |
+```bash
+$ THEME=YOUR_CHOSEN_THEME npm run gen-templates
+```
 
 # Author
 
