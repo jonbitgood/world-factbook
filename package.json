@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A javascript project for interacting with the world factbook",
   "author": "Jonathan Bitgood <jon@dbs.org>",
-  "homepage": "https://github.com/confirmed/world-factbook#readme",
+  "homepage": "https://github.com/jonbitgood/world-factbook#readme",
   "keywords": [
     "node"
   ],
@@ -14,19 +14,15 @@
   "scripts": {
 	"gen-templates": "./node_modules/hogan.js/bin/hulk ./templates/* > ./src/templates-gen.js",
     "fetch-factbook": "cd src/data && git clone https://github.com/factbook/factbook.json.git factbook && mv */*.json ./ && rm -rf */ && rm -rf *.md",
-    "coverage": "jest --colors --coverage",
-    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
-    "jest": "jest --colors --verbose",
     "lint": "eslint src/**/*.js test/**/*.js",
-    "start": "node src/index.js",
-    "test": "npm run lint && npm run jest"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/confirmed/world-factbook.git"
+    "url": "https://github.com/jonbitgood/world-factbook.git"
   },
   "bugs": {
-    "url": "https://github.com/confirmed/world-factbook/issues"
+    "url": "https://github.com/jonbitgood/world-factbook/issues"
   },
   "dependencies": {
     "babel-plugin-transform-object-rest-spread": "6.26.0",
